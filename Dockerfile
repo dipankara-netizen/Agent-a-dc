@@ -21,4 +21,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . .
 
-CMD ["streamlit", "run", "app.py", "--server.port", "$PORT", "--server.enableCORS", "false"]
+CMD streamlit run app.py --server.port $PORT --server.enableCORS false
